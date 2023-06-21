@@ -1,0 +1,10 @@
+from sklearn.svm import SVC
+
+# Create an SVM classifier object
+svm_classifier = SVC()
+
+# Train the classifier on the training data
+svm_classifier.fit(X_train, y_train)
+
+# Predict the target variable for the test data
+y_pred = svm_classifier.predict(X_test)
